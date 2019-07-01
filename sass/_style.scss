@@ -75,7 +75,9 @@ h6 {
   > header
   ========================================================================== */
 .header{
-  position: relative;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
 }
 .navbar{
   padding: 30px;

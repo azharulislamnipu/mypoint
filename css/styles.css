@@ -85,7 +85,7 @@ h5 { line-height: 20px; font-style: normal; }
 h6 { line-height: 18px; font-style: normal; }
 
 /* ========================================================================== > header ========================================================================== */
-.header { position: relative; }
+.header { position: absolute; width: 100%; z-index: 9999; }
 
 .navbar { padding: 30px; background-color: transparent; }
 
