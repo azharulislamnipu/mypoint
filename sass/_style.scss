@@ -391,3 +391,33 @@ a.navbar-brand{
   max-width: 950px;
   margin: 0 auto;
 }
+
+.white-circle{
+  width: 100px;
+  height: 100px;
+  border: 1px solid $white;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto 20px auto;
+  h2{
+    text-align: center;
+    line-height: 1.8;
+  }
+}
+
+ul.work-process>li{
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 5px;
+  color:$black;
+  font-family: $gothic;
+  &:before{
+    content: '\f005';
+    font-family: FontAwesome;
+    position: absolute;
+    color: $white;
+    left: 0;
+    width: 30px;
+    height: 30px;
+  }
+}
