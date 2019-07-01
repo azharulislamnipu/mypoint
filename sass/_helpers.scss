@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('../css/fonts/CenturyGothic.woff2') format('woff2'),
+  url('../css/fonts/CenturyGothic.woff') format('woff'),
+  url('../css/fonts/CenturyGothic.ttf') format('truetype'),
+  url('../css/fonts/CenturyGothic.svg#CenturyGothic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .after {
   position: absolute;
   content: " ";
@@ -84,4 +94,7 @@ textarea {
 }
 .merun{
  color: $title-color-cont;
+}
+.red-text{
+ color: $red;
 }

@@ -1,4 +1,19 @@
+@font-face { font-family: 'Century Gothic'; src: url("../css/fonts/CenturyGothic.woff2") format("woff2"), url("../css/fonts/CenturyGothic.woff") format("woff"), url("../css/fonts/CenturyGothic.ttf") format("truetype"), url("../css/fonts/CenturyGothic.svg#CenturyGothic") format("svg"); font-weight: normal; font-style: normal; }
 .after { position: absolute; content: " "; display: block; left: 0; top: 0; }
+
+a { font-size: 16px; }
+
+a, input[type=text], .btn { -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; transition: all .3s ease-in-out; }
+
+.btn, .btn.focus, .btn:focus, a:hover, a:focus, a:active { box-shadow: none; outline: none; }
+
+input.placeholder, textarea.placeholder { color: #171019; }
+input:-moz-placeholder, textarea:-moz-placeholder { color: #171019; }
+input::-moz-placeholder, textarea::-moz-placeholder { color: #171019; }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #171019; }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #171019; }
+
+.top-title h2 { font-size: 38px; line-height: 1.4; }
 
 .pink { color: #DD127C; }
 
@@ -16,13 +31,15 @@
 
 .merun { color: #6B7100; }
 
-html, body { height: 100%; font-size: 22px; position: relative; font-family: "Gamja Flower", cursive; }
+.red-text { color: #ff2812; }
+
+html, body { height: 100%; font-size: 16px; position: relative; font-family: "Century Gothic"; }
 
 html { overflow-y: scroll; }
 
-body { min-width: 100px; line-height: 1.3; font-weight: 400; font-style: normal; }
+body { min-width: 100px; line-height: 1.3; font-style: normal; }
 
-a { cursor: pointer; text-decoration: none; font-style: normal; }
+a { cursor: pointer; text-decoration: none; font-style: normal; font-weight: 600; }
 
 a:hover, a:focus, a:active { text-decoration: none; font-style: normal; outline: none; }
 
@@ -32,17 +49,15 @@ ul, ol { list-style-position: inside; list-style-type: none; }
 
 img { max-width: 100%; }
 
-h2 { line-height: 48px; font-style: normal; font-size: 49px; font-weight: 400; font-family: "Luckiest Guy", cursive; }
+h2 { line-height: 48px; font-style: normal; }
 
-h3 { line-height: 30px; font-style: normal; font-size: 31px; font-weight: 400; font-family: "Luckiest Guy", cursive; }
+h3 { line-height: 30px; font-style: normal; }
 
-h4 { line-height: 25px; font-style: normal; font-size: 26px; font-weight: 400; font-family: "Luckiest Guy", cursive; }
+h4 { line-height: 25px; font-style: normal; }
 
-h5 { line-height: 20px; font-style: normal; font-size: 21px; font-weight: 400; font-family: "Gamja Flower", cursive; }
+h5 { line-height: 20px; font-style: normal; }
 
-h6 { line-height: 18px; font-style: normal; font-size: 21px; font-weight: 400; font-family: "Gamja Flower", cursive; }
-
-p { font-size: 22px; font-weight: 400; font-family: "Gamja Flower", cursive; line-height: 1.3; }
+h6 { line-height: 18px; font-style: normal; }
 
 /* ========================================================================== > Custom nav ========================================================================== */
 /* ========================================================================== > Comment start ========================================================================== */
