@@ -5,6 +5,19 @@
 
     $doc.ready(function () {
 
+        $(".banner-slider").slick({
+            autoplay:false,
+            autoplaySpeed: 10000,
+            slidesToShow:1,
+            slidesToScroll:1,
+            pauseOnHover:false,
+            dots:true,
+            pauseOnDotsHover:true,
+            cssEase:'linear',
+            draggable:false,
+            prevArrow:'<button class="PrevArrow"></button>',
+            nextArrow:'<button class="NextArrow"></button>',
+        });
 
         $('a[href*="#"]')
         // Remove links that don't actually link to anything

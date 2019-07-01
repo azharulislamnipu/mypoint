@@ -18,7 +18,6 @@ a {
   cursor: pointer;
   text-decoration: none;
   font-style: normal;
-  font-weight: $w-600;
 }
 a:hover,
 a:focus,
@@ -73,5 +72,166 @@ h6 {
 
 
 /* ==========================================================================
-  > Custom nav
+  > header
   ========================================================================== */
+.header{
+  position: relative;
+}
+.navbar{
+  padding: 30px;
+  background-color: transparent;
+}
+
+
+
+/* ==========================================================================
+> banner-slider start
+========================================================================== */
+
+.img-fill{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  img {
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
+    display: inline-block;
+    //max-width: none;
+  }
+}
+
+
+
+
+.blocks-box,
+.slick-slider {
+  margin: 0;
+  padding: 0!important;
+}
+
+.slick-slide {
+  float: left /* If RTL Make This Right */ ;
+  padding: 0;
+}
+
+
+.banner-slider .item .img-fill {
+  height:100vh;
+  background:#000;
+  .info{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    //background:rgba(0,0,0,.1);
+    line-height:100vh;
+    text-align:center;
+  }
+}
+
+
+.banner-slider .item .info > div{
+  display:inline-block!important;
+  vertical-align:middle;
+}
+
+.banner-slider .slick-arrow{
+
+  position:absolute;
+  top:50%;
+  width:45px;
+  height:45px;
+  background:rgba(0,0,0,.50);
+  border:0 none;
+  margin-top:-22.5px;
+  text-align:center;
+  font:20px/45px FontAwesome;
+  color:#FFF;
+  z-index:5;
+  &:hover,&:focus{
+    background-color: $light-pink;
+    outline: 0;
+  }
+}
+.banner-slider .NextArrow{
+  right:0px;
+  &:before{content:'\f105';}
+}
+
+
+.banner-slider .PrevArrow{
+  left:0px;
+  &:before{content:'\f104';}
+}
+
+
+.banner-slider .slick-dots{
+  position:absolute;
+  height:5px;
+  background:rgba(255,255,255,.20);
+  bottom:0px;
+  width:100%;
+  left:0px;
+  padding:0px;
+  margin:0px;
+  list-style-type:none;
+  li button{display:none;}
+  li{
+    float:left;
+    width:0px;
+    height:5px;
+    background:$light-pink;
+    position:absolute;
+    left:0px;
+    bottom:0px;
+  }
+  li.slick-active{
+    width:100%;
+    animation:ProgressDots 11s both;
+  }
+}
+.banner-slider .item{
+  h2{
+    text-transform:uppercase;
+    color:$light-pink;
+    animation:fadeOutRight 1s both;
+    padding:0;
+  }
+  h4{
+    padding:0;
+    color:rgb(113, 108, 128);
+    max-width:700px;
+    margin: 0 auto;
+    overflow:hidden;
+    height:60px;
+    animation:fadeOutLeft 1s both;
+  }
+
+}
+
+
+.banner-slider .item.slick-active h2{
+  animation:fadeInDown 1s both 1s;
+}
+.banner-slider .item.slick-active h4{
+  animation:fadeInLeft 1s both 1.5s;
+}
+
+.banner-slider .item.slick-active{
+  animation:Slick-FastSwipeIn 1s both;
+}
+
+.banner-slider {background:#000;}
+
+/* ==== Slider Image Transition === */
+@keyframes Slick-FastSwipeIn{
+  0%{transform:rotate3d(0,1,0,150deg) scale(0)  perspective(400px);}
+  100%{transform:rotate3d(0,1,0,0deg) scale(1) perspective(400px);}
+}
+
+@-webkit-keyframes ProgressDots{from{width:0px;}to{width:100%;}}
+@keyframes ProgressDots{from{width:0px;}to{width:100%;}}
