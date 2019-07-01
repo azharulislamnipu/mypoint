@@ -31,6 +31,17 @@
         });
 
 
+
+        $('.grid').isotope({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            masonry: {
+                // use outer width of grid-sizer for columnWidth
+                columnWidth: 1
+            }
+        });
+
+
         slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
             let slidesLength = slick.$slides.length - 1,
                 isCurrentFirstOrLast = currentSlide === 0 || currentSlide === slidesLength,
