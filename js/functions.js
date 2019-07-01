@@ -8,6 +8,7 @@
         slider.slick({
             autoplay:false,
             autoplaySpeed: 10000,
+            vertical: true,
             slidesToShow:1,
             slidesToScroll:1,
             pauseOnHover:false,
