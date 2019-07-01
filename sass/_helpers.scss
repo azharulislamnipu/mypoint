@@ -1,0 +1,87 @@
+.after {
+  position: absolute;
+  content: " ";
+  display: block;
+  left: 0;
+  top: 0;
+}
+
+a{
+  font-size: $base-font-size;
+}
+
+a, input[type=text], .btn {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.btn, .btn.focus, .btn:focus, a:hover, a:focus, a:active {
+  box-shadow: none;
+  outline: none;
+}
+
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+input,
+textarea {
+  @include input-placeholder {
+    color: $black;
+  }
+}
+
+@mixin top-title($font_size,$lh) {
+  h2 {
+    font-size: $font_size;
+    line-height: $lh;
+  }
+}
+
+.top-title {
+  @include top-title(38px, 1.4);
+}
+
+
+
+.pink{
+ color: $light-pink;
+}
+.dark-pink{
+ color: $pink-dark;
+}
+.purple{
+ color: $bg-purple-soft;
+}
+.purple-light{
+ color: $bg-purple-light;
+}
+.orange{
+ color: $bg-gym-orange;
+}
+.orange-dark{
+ color: $orange-dark;
+}
+.blue{
+ color: $blue;
+}
+.merun{
+ color: $title-color-cont;
+}
