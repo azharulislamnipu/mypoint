@@ -4,20 +4,47 @@
 
 
     $doc.ready(function () {
-
-        $(".banner-slider").slick({
+         var slider =  $(".slider");
+        slider.slick({
             autoplay:false,
             autoplaySpeed: 10000,
             slidesToShow:1,
             slidesToScroll:1,
             pauseOnHover:false,
             dots:true,
+            arrows: false,
+            infinite: true,
             pauseOnDotsHover:true,
             cssEase:'linear',
             draggable:false,
             prevArrow:'<button class="PrevArrow"></button>',
             nextArrow:'<button class="NextArrow"></button>',
         });
+
+        slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+            $(slick.$slides).removeClass('is-animating');
+        });
+
+        slider.on('afterChange', function(event, slick, currentSlide, nextSlide) {
+            $(slick.$slides.get(currentSlide)).addClass('is-animating');
+        });
+
+
+        slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            let slidesLength = slick.$slides.length - 1,
+                isCurrentFirstOrLast = currentSlide === 0 || currentSlide === slidesLength,
+                isNextFirstOrLast = nextSlide === 0 || nextSlide === slidesLength;
+
+            if (isCurrentFirstOrLast && isNextFirstOrLast){
+                let nextClone = $(event.currentTarget).find('.slick-cloned.slick-active');
+                setTimeout(function(){
+                    nextClone.addClass('slick-current');
+                }, 100)
+            }
+        });
+
+
+
 
         $('a[href*="#"]')
         // Remove links that don't actually link to anything

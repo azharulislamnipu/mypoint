@@ -90,52 +90,26 @@ h6 { line-height: 18px; font-style: normal; }
 .navbar { padding: 30px; background-color: transparent; }
 
 /* ==========================================================================
-> banner-slider start
+> slider-area start
 ========================================================================== */
-.img-fill { width: 100%; display: block; overflow: hidden; position: relative; text-align: center; }
-.img-fill img { min-height: 100%; min-width: 100%; position: relative; display: inline-block; }
+.slider-area { height: 100vh; width: 100%; flex-wrap: wrap; z-index: 100; position: relative; display: block; box-sizing: border-box; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-touch-callout: none; -khtml-user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; opacity: 1; }
+.slider-area > div { height: 100vh; }
+.slider-area .slick-slider { margin-bottom: 0; }
+.slider-area .slick-slide { outline: none; background-size: cover; height: 100vh; top: 0; bottom: 0; left: 0; position: relative; }
+.slider-area .slide { background-position: center center; background-repeat: no-repeat; background-color: transparent; background-size: cover; height: 100vh; }
+.slider-area .slick-dots { margin: 0 auto; text-align: center; bottom: 167px; z-index: 1; position: absolute; left: 0; right: 0; padding: 0; }
+.slider-area .slick-dots li { display: inline-block; margin: 0 8px; }
+.slider-area .slick-dots li button { background-color: rgba(255, 255, 255, 0.59); height: 5px; width: 30px; border: 0; box-shadow: none; outline: none; text-indent: -9999px; }
+.slider-area .slick-dots li button:before { display: none; }
+.slider-area .slick-dots li.slick-active button { background-color: white; }
 
-.blocks-box, .slick-slider { margin: 0; padding: 0 !important; }
+.slick-dotted.slick-slider { margin: 0; z-index: 0; }
 
-.slick-slide { float: left; padding: 0; }
+.caption .custom-btn { background-color: #000000; color: #ffffff; font-size: 18px; font-family: "Open Sans", sans-serif; font-weight: 400; width: auto; border: 1px solid #ff3251; display: block; outline: none; box-shadow: none; border-radius: 0; padding: 13px 40px; display: inline-block; border: none; font-weight: 700; }
+.caption h4 { text-shadow: 0px 0px 107.5px rgba(0, 0, 0, 0.81); opacity: 0.7; }
 
-.banner-slider .item .img-fill { height: 100vh; background: #000; }
-.banner-slider .item .img-fill .info { position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; line-height: 100vh; text-align: center; }
+.first-header { width: 100%; z-index: 9999; background-color: #fff; }
 
-.banner-slider .item .info > div { display: inline-block !important; vertical-align: middle; }
-
-.banner-slider .slick-arrow { position: absolute; top: 50%; width: 45px; height: 45px; background: rgba(0, 0, 0, 0.5); border: 0 none; margin-top: -22.5px; text-align: center; font: 20px/45px FontAwesome; color: #FFF; z-index: 5; }
-.banner-slider .slick-arrow:hover, .banner-slider .slick-arrow:focus { background-color: #DD127C; outline: 0; }
-
-.banner-slider .NextArrow { right: 0px; }
-.banner-slider .NextArrow:before { content: '\f105'; }
-
-.banner-slider .PrevArrow { left: 0px; }
-.banner-slider .PrevArrow:before { content: '\f104'; }
-
-.banner-slider .slick-dots { position: absolute; height: 5px; background: rgba(255, 255, 255, 0.2); bottom: 0px; width: 100%; left: 0px; padding: 0px; margin: 0px; list-style-type: none; }
-.banner-slider .slick-dots li button { display: none; }
-.banner-slider .slick-dots li { float: left; width: 0px; height: 5px; background: #DD127C; position: absolute; left: 0px; bottom: 0px; }
-.banner-slider .slick-dots li.slick-active { width: 100%; animation: ProgressDots 11s both; }
-
-.banner-slider .item h2 { text-transform: uppercase; color: #DD127C; animation: fadeOutRight 1s both; padding: 0; }
-.banner-slider .item h4 { padding: 0; color: #716c80; max-width: 700px; margin: 0 auto; overflow: hidden; height: 60px; animation: fadeOutLeft 1s both; }
-
-.banner-slider .item.slick-active h2 { animation: fadeInDown 1s both 1s; }
-
-.banner-slider .item.slick-active h4 { animation: fadeInLeft 1s both 1.5s; }
-
-.banner-slider .item.slick-active { animation: Slick-FastSwipeIn 1s both; }
-
-.banner-slider { background: #000; }
-
-/* ==== Slider Image Transition === */
-@keyframes Slick-FastSwipeIn { 0% { transform: rotate3d(0, 1, 0, 150deg) scale(0) perspective(400px); }
-  100% { transform: rotate3d(0, 1, 0, 0deg) scale(1) perspective(400px); } }
-@-webkit-keyframes ProgressDots { from { width: 0px; }
-  to { width: 100%; } }
-@keyframes ProgressDots { from { width: 0px; }
-  to { width: 100%; } }
 /* ========================================================================== > Comment start ========================================================================== */
 /* ========================================================================== > Comment start ========================================================================== */
 
