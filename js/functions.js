@@ -2,6 +2,13 @@
     var $win = $(window);
     var $doc = $(document);
 
+    $doc.click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("show");
+        if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+        }
+    });
 
     $doc.ready(function () {
          var slider =  $(".slider");
@@ -118,6 +125,8 @@
             });
 
     });
+
+
 
 
 })(jQuery, window, document);
