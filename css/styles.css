@@ -39,6 +39,8 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 
 .pt-80 { padding-top: 80px; }
 
+.bg-red { background-color: #ff2812; }
+
 /* Slider */
 .slick-slider { position: relative; display: block; box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
@@ -97,8 +99,8 @@ h6 { line-height: 18px; font-style: normal; }
 
 .navbar { padding: 20px; background-color: transparent; }
 
-a.navbar-brand { font-family: "Roboto Slab", serif; font-size: 24px; color: #ff2812; }
-a.navbar-brand:hover { color: #ff2812; }
+a.navbar-brand { font-family: "Roboto Slab", serif; font-size: 24px; }
+a.navbar-brand:hover { color: inherit; }
 
 .navbar-expand-lg .navbar-nav .nav-link { padding: 0 10px; font-size: 16px; font-family: "Century Gothic"; color: #000; }
 .navbar-expand-lg .navbar-nav .nav-link:hover { color: #ff2812; }
@@ -113,6 +115,25 @@ a.navbar-brand:hover { color: #ff2812; }
 .navbar .form-inline .form-control::-webkit-input-placeholder { color: #000; }
 .navbar .form-inline .form-control:focus { outline: 0; border: 0; box-shadow: none; }
 .navbar .form-inline i { font-size: 16px; margin-right: 8px; }
+
+.header.bg-red { position: relative; }
+.header.bg-red .navbar { padding: 0; }
+.header.bg-red .navbar-expand-lg .navbar-nav .nav-link { padding: 30px 10px; font-size: 16px; font-family: "Century Gothic"; color: #000; }
+.header.bg-red .navbar-expand-lg .navbar-nav .nav-link:hover { color: #ffffff; }
+.header.bg-red .navbar-expand-lg .nav-item.active .nav-link { color: #ffffff; }
+.header.bg-red .navbar-brand { width: 80px; height: 80px; padding: 15px 0; background-color: #ffffff; }
+
+.circle-logo { width: 50px; height: 50px; border-radius: 50%; border: 1px solid #ffffff; background-color: #ff2812; text-align: center; margin: 0 auto; display: block; color: #ffffff; line-height: 46px; font-size: 16px; }
+
+/* ==========================================================================
+> communities start
+========================================================================== */
+.communities { position: relative; padding: 20px 0 105px 0; background-color: #dddddd; }
+.communities .container { max-width: 1200px; }
+.communities h5 { font-size: 18px; padding: 30px 0; }
+.communities span { color: #8a8a8a; }
+
+.community-box { border: 1px solid #000; min-height: 650px; border-radius: 40px; background-color: #ffffff; }
 
 /* ==========================================================================
 > slider-area start

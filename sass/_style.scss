@@ -102,9 +102,8 @@ h6 {
 a.navbar-brand{
  font-family: $roboto;
   font-size: 24px;
-  color: $red;
   &:hover{
-   color: $red;
+   color: inherit;
   }
 }
 .navbar-expand-lg .navbar-nav .nav-link{
@@ -162,6 +161,72 @@ a.navbar-brand{
     font-size: 16px;
     margin-right: 8px;
   }
+}
+
+.header.bg-red{
+  position: relative;
+  .navbar{
+    padding: 0;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link{
+    padding: 30px 10px;
+    font-size: $base-font-size;
+    font-family: $gothic;
+    color: $black;
+    &:hover{
+      color: $white;
+    }
+  }
+  .navbar-expand-lg .nav-item.active .nav-link{
+    color: $white;
+  }
+  .navbar-brand{
+    width: 80px;
+    height: 80px;
+    padding: 15px 0;
+    background-color: $white;
+
+  }
+
+}
+.circle-logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid $white;
+  background-color: $red;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  color: $white;
+  line-height: 46px;
+  font-size: 16px;
+}
+/* ==========================================================================
+> communities start
+========================================================================== */
+.communities{
+ position: relative;
+  padding: 20px 0 105px 0;
+  background-color: #dddddd;
+
+  .container {
+    max-width: 1200px;
+  }
+
+  h5{
+    font-size: 18px;
+    padding: 30px 0;
+  }
+  span{
+    color: #8a8a8a;
+  }
+}
+.community-box{
+  border: 1px solid $black;
+  min-height: 650px;
+  border-radius: 40px;
+  background-color: $white;
 }
 /* ==========================================================================
 > slider-area start
