@@ -159,7 +159,7 @@ a.navbar-brand:hover { color: #ff2812; }
 
 .card-body { padding: 0; }
 
-.row-container { max-width: 950px; margin: 0 auto; }
+.grid { margin: 0 50px; }
 
 .white-circle { width: 100px; height: 100px; border: 1px solid #ffffff; border-radius: 50%; text-align: center; margin: 0 auto 20px auto; }
 .white-circle h2 { text-align: center; line-height: 1.8; }
