@@ -512,7 +512,9 @@ ul.work-process>li{
     height: 30px;
   }
 }
-
+/* ==========================================================================
+> about start
+========================================================================== */
 .about{
   position: relative;
   background: url("#{$assetPath}/image31.jpg") no-repeat center center;
@@ -550,7 +552,9 @@ ul.work-process>li{
     line-height: 1.4;
   }
 }
-
+/* ==========================================================================
+> team start
+========================================================================== */
 .team-circle{
   background-position: center center;
   background-size: cover;
@@ -576,4 +580,52 @@ ul.work-process>li{
 }
 .inner-main{
   padding: 80px 0 0 0;
+}
+/* ==========================================================================
+> sign-area start
+========================================================================== */
+.sign-area{
+  position: relative;
+  background: url("#{$assetPath}/image1.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  color: $white;
+  text-align: center;
+  &:before{
+    content: '';
+    background-color: rgba(2, 3, 3, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.modal-title{
+  margin: 0 auto;
+}
+.modal-header .close{
+  margin: 0;
+}
+.modal-dialog {
+  max-width: 430px;
+}
+.modal-content{
+  border-radius: 0;
+  background-color: #F7F7F7;
+}
+.modal-body{
+  padding: 0 30px;
+}
+.btn-sign{
+  background-color: #337AB7;
+  color: $white;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  &:hover{
+    background-color: $black;
+  }
 }

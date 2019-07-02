@@ -41,6 +41,10 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 
 .bg-red { background-color: #ff2812; }
 
+body.modal-open { overflow: hidden; padding: 0 !important; }
+
+.modal.show { padding: 0 !important; }
+
 /* Slider */
 .slick-slider { position: relative; display: block; box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
@@ -197,6 +201,9 @@ button[aria-expanded="true"] { color: #ff2812; }
 ul.work-process > li { position: relative; padding-left: 50px; margin-bottom: 5px; color: #000; font-family: "Century Gothic"; }
 ul.work-process > li:before { content: '\f005'; font-family: FontAwesome; position: absolute; color: #ffffff; left: 0; width: 30px; height: 30px; }
 
+/* ==========================================================================
+> about start
+========================================================================== */
 .about { position: relative; background: url("../images/image31.jpg") no-repeat center center; background-size: cover; height: 100vh; color: #ffffff; text-align: center; }
 .about:before { content: ''; background-color: rgba(2, 3, 3, 0.5); width: 100%; height: 100%; position: absolute; left: 0; right: 0; display: block; margin: 0 auto; }
 .about a { color: #ffffff; font-size: 14px; text-decoration: underline; }
@@ -205,6 +212,9 @@ ul.work-process > li:before { content: '\f005'; font-family: FontAwesome; positi
 .about-content { padding: 100px 0; }
 .about-content p { margin-bottom: 30px; line-height: 1.4; }
 
+/* ==========================================================================
+> team start
+========================================================================== */
 .team-circle { background-position: center center; background-size: cover; width: 100px; height: 100px; border-radius: 50%; border: 2px solid #000000; }
 
 .team-content-area { padding: 20px 0; }
@@ -215,6 +225,25 @@ ul.work-process > li:before { content: '\f005'; font-family: FontAwesome; positi
 .team-content p { color: #000; margin-bottom: 0; }
 
 .inner-main { padding: 80px 0 0 0; }
+
+/* ==========================================================================
+> sign-area start
+========================================================================== */
+.sign-area { position: relative; background: url("../images/image1.jpg") no-repeat center center; background-size: cover; height: 100vh; color: #ffffff; text-align: center; }
+.sign-area:before { content: ''; background-color: rgba(2, 3, 3, 0.5); width: 100%; height: 100%; position: absolute; left: 0; right: 0; display: block; margin: 0 auto; }
+
+.modal-title { margin: 0 auto; }
+
+.modal-header .close { margin: 0; }
+
+.modal-dialog { max-width: 430px; }
+
+.modal-content { border-radius: 0; background-color: #F7F7F7; }
+
+.modal-body { padding: 0 30px; }
+
+.btn-sign { background-color: #337AB7; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; }
+.btn-sign:hover { background-color: #000; }
 
 /* ========================================================================== > Comment start ========================================================================== */
 /* ========================================================================== > Comment start ========================================================================== */

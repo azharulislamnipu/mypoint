@@ -112,3 +112,10 @@ textarea {
   background-color: $red;
 }
 
+body.modal-open {
+  overflow: hidden;
+  padding: 0 !important;
+}
+.modal.show{
+padding: 0 !important;
+}

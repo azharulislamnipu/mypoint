@@ -64,26 +64,10 @@
 
 
 
-        // $('.slider-for').slick({
-        //     slidesToShow: 1,
-        //     slidesToScroll: 1,
-        //     arrows: false,
-        //     dots: false,
-        //     fade: true,
-        //     asNavFor: '.flex-control-nav',
-        //     accesibility: false,
-        //     draggable: false,
-        //     swipe: false,
-        //     touchMove: false
-        // });
-        // $('.flex-control-nav').slick({
-        //     slidesToShow: 4,
-        //     slidesToScroll: 1,
-        //     asNavFor: '.slider-for',
-        //     dots: false,
-        //     arrows: false,
-        //     focusOnSelect: true
-        // });
+        if ($('#sign').length > 0) {
+            $('#sign').modal('show');
+        }
+
 
 
 
