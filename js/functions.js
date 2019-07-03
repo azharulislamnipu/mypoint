@@ -1,6 +1,7 @@
-;(function ($, window, document, undefined) {
+;(function ($,body, window, document, undefined) {
     var $win = $(window);
     var $doc = $(document);
+    var $body = $(body);
 
     $doc.click(function (event) {
         var clickover = $(event.target);
@@ -48,6 +49,15 @@
             }
         });
 
+        $('.grid-gallery').isotope({
+            itemSelector: '.gallery-item',
+            percentPosition: true,
+            masonry: {
+                columnWidth: 2
+
+            }
+        });
+
 
         slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
             let slidesLength = slick.$slides.length - 1,
@@ -67,6 +77,43 @@
         if ($('#sign').length > 0) {
             $('#sign').modal('show');
         }
+        if ($('#welcome').length > 0) {
+            $('#welcome').modal('show');
+
+        }
+
+        $('#gender_content').hide();
+        $('#age-box').hide();
+        // $('.welcome_content').hide();
+        $( ".btn-next" ).click(function() {
+            $(this).parents('.welcome_content').hide();
+            $('#gender_content').show();
+        });
+
+        $( "#male" ).click(function() {
+            if ($(this).is(":checked")) {
+                $('#gender_content').hide();
+                $('#age-box').show();
+            }
+        });
+        $( "#female" ).click(function() {
+            if ($(this).is(":checked")) {
+                $('#gender_content').hide();
+                $('#age-box').show();
+            }
+        });
+
+        $( "#notimportant" ).click(function() {
+            if ($(this).is(":checked")) {
+                $('#gender_content').hide();
+                $('#age-box').show();
+            }
+        });
+
+        if ($('#interestmodal').length > 0) {
+            $('#interestmodal').modal('show');
+        }
+
 
 
 

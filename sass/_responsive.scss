@@ -7,13 +7,15 @@
   a.navbar-brand {
     margin: 0 auto;
   }
-  .header.bg-red {
+  .header.bg-red ,.header.bg-pink{
     a.navbar-brand {
       margin: 0;
     }
   }
-  .header.bg-red .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 10px 10px;
+  .header.bg-red ,.header.bg-pink{
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding: 10px 10px;
+    }
   }
   .grid {
     margin: 0 50px;
@@ -48,13 +50,15 @@
   a.navbar-brand {
     margin: 0 auto;
   }
-  .header.bg-red {
+  .header.bg-red ,.header.bg-pink{
     a.navbar-brand {
       margin: 0;
     }
   }
-  .header.bg-red .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 10px 10px;
+  .header.bg-red ,.header.bg-pink{
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding: 10px 10px;
+    }
   }
   .grid {
     margin: 0 50px;
@@ -72,14 +76,16 @@
   a.navbar-brand {
     margin: 0 auto;
   }
-  .header.bg-red {
+  .header.bg-red ,.header.bg-pink{
     a.navbar-brand {
       margin: 0;
     }
   }
 
-  .header.bg-red .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 10px 10px;
+  .header.bg-red ,.header.bg-pink{
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding: 10px 10px;
+    }
   }
 
 }

@@ -65,7 +65,7 @@
 
     <!-- /.main start  -->
     <main class="main inner-main">
-        <section class="sign-area">
+        <section class="welcome">
             <div class="container">
 
             </div>
@@ -83,61 +83,87 @@
 <!-- Button trigger modal -->
 
 <!-- Modal -->
-<div class="modal fade sign-modal" id="sign" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade welcomemodal" id="welcome" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered " role="document">
         <div class="modal-content">
-            <div class="modal-header ">
-                <h4 class="modal-title text-center" id="exampleModalLongTitle">Sign In</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"> X</span>
-                </button>
-            </div>
-            <div class="modal-body">
+
+            <div class="modal-body text-center">
 
 
                 <form action="">
 
-                    <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fa fa-user"></i></span>
-                        </div>
-                        <input type="text" name="" class="form-control" placeholder="username"/>
-                    </div>
-                    <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fa fa-lock"></i></span>
-                        </div>
-                        <input type="password" name="" class="form-control" placeholder="password"/>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-sign  btn-block">Sign in</button>
-                    </div>
 
-                    <div class="checkbox clearfix">
-                       <div class="float-left">
-                           <label>
-                               <input type="checkbox"> Remember me
-                           </label>
+
+                       <div class="content-box welcome_content" id="welcome_content">
+                           <h3 class="border-btm">Welcome to MyPoint</h3>
+
+                           <h3>  We’re here to help you build A better sexual life</h3>
+
+                           <p class="small-text">Your answers to the next few questions will help us find the right ideas for you</p>
+
+                           <a href="javascript:void(0)"  class="btn btn-next  btn-block">Next</a>
+
                        </div>
-                        <div class="float-right">
-                            <a href="">Forgot Password?</a>
+
+                            <div class="content-box gender_content text-left" id="gender_content">
+                                <h3>How do you identify?</h3>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="male" >
+                                    <label class="form-check-label" for="male">
+                                        Male
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                    <label class="form-check-label" for="female">
+                                        Female
+                                    </label>
+                                </div>
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="radio" name="gender" id="notimportant" value="notimportant" >
+                                    <label class="form-check-label" for="notimportant">
+                                       Not Important
+                                    </label>
+                                </div>
+
+                            </div>
+                    <div class="content-box age-box text-left" id="age-box">
+                        <p>Select your age and whare
+                            Are you from</p>
+
+                        <div class="form-group">
+
+                            <select class="form-control" id="state">
+                                <option>State/Country</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                                <option value="spain">Spain</option>
+
+
+                            </select>
+                        </div>
+
+                        <div class="form-group ">
+
+                            <select class="form-control" id="age">
+                                <option>Age</option>
+                                <option value="18-25">18-25</option>
+                                <option value="26-38">26-38</option>
+                                <option value="39-51">39-51</option>
+                                <option value="52-64">52-64</option>
+                                <option value="65-78">65-78</option>
+                            </select>
                         </div>
                     </div>
 
-                    <div class="or-divider text-center "><p class="m-0">or</p></div>
 
-                    <div class="social-buttons clearfix text-center">
-                        <p>login with your social media account</p>
-                        <a href="#" class="btn btn-fb btn-primary"><i class="fa fa-facebook"></i> Facebook</a>
-                        <a href="#" class="btn btn-tw btn-secondary"><i class="fa fa-twitter"></i> Twitter</a>
-                        <a href="#" class="btn btn-tw btn-danger"><i class="fa fa-twitter"></i> Google</a>
-                    </div>
+
+
 
                 </form>
             </div>
-            <div class="modal-footer text-center ">
-             <p class="m-auto">Don't have an account? <a href="">Sign up Here</a></p>
-            </div>
+
         </div>
     </div>
 </div>

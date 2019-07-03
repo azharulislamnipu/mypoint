@@ -111,7 +111,10 @@ textarea {
 .bg-red{
   background-color: $red;
 }
-
+.bg-pink{
+  background: rgb(255,1,91);
+  background: linear-gradient(90deg, rgba(255,1,91,1) 0%, rgba(255,79,141,1) 41%, rgba(254,102,155,1) 100%);
+}
 body.modal-open {
   overflow: hidden;
   padding: 0 !important;
