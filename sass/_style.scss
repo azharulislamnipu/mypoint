@@ -930,14 +930,15 @@ ul.work-process>li{
 .grid-gallery{
 
 }
-.gallery-item{
+.gallery-item,.grid-sizer{
   display: block;
   float: left;
   width: 200px;
   height: 100px;
-  display: inline-block;
-  margin: 0 0 1.5em;
+  margin: 0 20px 20px 0;
 }
+
+.gutter-sizer { width: 4%; }
 .h-250{
   height: 250px;
 }

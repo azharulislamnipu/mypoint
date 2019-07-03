@@ -316,7 +316,9 @@ ul.work-process > li:before { content: '\f005'; font-family: FontAwesome; positi
 .gallery-area .form-control { background-color: #fff; border-color: #ffffff; color: #000; padding: .375rem 0.5rem; }
 .gallery-area .form-control:focus { background-color: #fff; border-color: #ffffff; box-shadow: none; }
 
-.gallery-item { display: block; float: left; width: 200px; height: 100px; display: inline-block; margin: 0 0 1.5em; }
+.gallery-item, .grid-sizer { display: block; float: left; width: 200px; height: 100px; margin: 0 20px 20px 0; }
+
+.gutter-sizer { width: 4%; }
 
 .h-250 { height: 250px; }
 

@@ -53,7 +53,7 @@
             itemSelector: '.gallery-item',
             percentPosition: true,
             masonry: {
-                columnWidth: 2
+                columnWidth: 1,
 
             }
         });
