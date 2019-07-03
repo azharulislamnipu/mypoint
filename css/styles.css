@@ -31,7 +31,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 
 .merun { color: #6B7100; }
 
-.red-text { color: #ff2812; }
+.red-text { color: #E60023; }
 
 .white-text { color: #ffffff; }
 
@@ -39,7 +39,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 
 .pt-80 { padding-top: 80px; }
 
-.bg-red { background-color: #ff2812; }
+.bg-red { background-color: #E60023; }
 
 body.modal-open { overflow: hidden; padding: 0 !important; }
 
@@ -92,7 +92,7 @@ h2 { line-height: 48px; font-style: normal; }
 
 h3 { line-height: 30px; font-style: normal; }
 
-h4 { line-height: 25px; font-style: normal; }
+h4 { line-height: 25px; font-style: normal; font-size: 28px; }
 
 h5 { line-height: 20px; font-style: normal; }
 
@@ -107,11 +107,11 @@ a.navbar-brand { font-family: "Roboto Slab", serif; font-size: 24px; }
 a.navbar-brand:hover { color: inherit; }
 
 .navbar-expand-lg .navbar-nav .nav-link { padding: 0 10px; font-size: 16px; font-family: "Century Gothic"; color: #000; }
-.navbar-expand-lg .navbar-nav .nav-link:hover { color: #ff2812; }
+.navbar-expand-lg .navbar-nav .nav-link:hover { color: #E60023; }
 
 .navbar p { margin: 0; color: #000; }
 .navbar p > a { background-color: transparent; color: #000; }
-.navbar p > a:hover { color: #ff2812; }
+.navbar p > a:hover { color: #E60023; }
 .navbar .form-inline .form-group { background: transparent; border: 1px solid #000; border-radius: 20px; padding: 0px; }
 .navbar .form-inline .form-control { background: transparent; border: 0; font-size: 14px; font-family: "Century Gothic"; padding: 3px; border-radius: 20px; color: #000; outline: 0; }
 .navbar .form-inline .form-control::placeholder { color: #000; }
@@ -123,7 +123,7 @@ a.navbar-brand:hover { color: inherit; }
 .navbar-toggler { padding: 0; outline: 0; }
 .navbar-toggler:focus { outline: 0; }
 
-button[aria-expanded="true"] { color: #ff2812; }
+button[aria-expanded="true"] { color: #E60023; }
 
 .header.bg-red .navbar-toggler { padding-right: 30px; }
 .header.bg-red .navbar { padding: 0; }
@@ -132,11 +132,11 @@ button[aria-expanded="true"] { color: #ff2812; }
 .header.bg-red .navbar-expand-lg .navbar-nav .nav-link:hover { color: #ffffff; }
 .header.bg-red .navbar-expand-lg .nav-item.active .nav-link { color: #ffffff; }
 .header.bg-red .navbar p > a:hover { color: #ffffff; }
-.header.bg-red .navbar-collapse { background-color: #ff2812; }
+.header.bg-red .navbar-collapse { background-color: #E60023; }
 .header.bg-red .navbar-brand { width: 80px; height: 80px; padding: 15px 0; background-color: #ffffff; margin-right: 75px; }
 .header.bg-red .form-inline { padding-right: 75px; }
 
-.circle-logo { width: 50px; height: 50px; border-radius: 50%; border: 1px solid #ffffff; background-color: #ff2812; text-align: center; margin: 0 auto; display: block; color: #ffffff; line-height: 46px; font-size: 16px; }
+.circle-logo { width: 50px; height: 50px; border-radius: 50%; border: 1px solid #ffffff; background-color: #E60023; text-align: center; margin: 0 auto; display: block; color: #ffffff; line-height: 46px; font-size: 16px; }
 
 /* ==========================================================================
 > communities start
@@ -155,7 +155,7 @@ button[aria-expanded="true"] { color: #ff2812; }
 .slider-area > div { height: 100vh; }
 .slider-area .slick-slider { margin-bottom: 0; }
 .slider-area .slick-slide { outline: none; background-size: cover; height: 100vh; top: 0; bottom: 0; left: 0; position: relative; border: 0; }
-.slider-area .slide { background-position: center center; background-repeat: no-repeat; background-color: transparent; background-size: cover; height: 100%; outline: none; }
+.slider-area .slide { background-position: center center; background-repeat: no-repeat; background-color: transparent; background-size: cover; height: 100vh; outline: none; overflow: hidden; }
 .slider-area .item:nth-child(2) .slide:before { content: ''; background-color: rgba(2, 3, 3, 0.73); width: 100%; height: 100%; position: absolute; left: 0; right: 0; display: block; margin: 0 auto; }
 .slider-area .slick-dots { margin: 0 auto; text-align: center; bottom: 167px; z-index: 1; position: absolute; left: 2%; padding: 0; width: 30px; }
 .slider-area .slick-dots li { display: inline-block; margin: 8px 0px; }
@@ -165,7 +165,7 @@ button[aria-expanded="true"] { color: #ff2812; }
 
 .slick-dotted.slick-slider { margin: 0; z-index: 0; }
 
-.caption .custom-btn { background-color: #ff2812; color: #ffffff; font-size: 14px; font-family: "Century Gothic"; font-weight: 400; width: auto; outline: none; box-shadow: none; border-radius: 8px; padding: 8px 30px; display: inline-block; border: none; }
+.caption .custom-btn { background-color: #E60023; color: #ffffff; font-size: 14px; font-family: "Century Gothic"; font-weight: 400; width: auto; outline: none; box-shadow: none; border-radius: 8px; padding: 8px 30px; display: inline-block; border: none; }
 .caption h1 { font-weight: 300; }
 
 .caption .circle { width: 150px; height: 150px; margin: 0 auto; border: 1px solid #ffffff; border-radius: 50%; }
@@ -207,7 +207,7 @@ ul.work-process > li:before { content: '\f005'; font-family: FontAwesome; positi
 .about { position: relative; background: url("../images/image31.jpg") no-repeat center center; background-size: cover; height: 100vh; color: #ffffff; text-align: center; }
 .about:before { content: ''; background-color: rgba(2, 3, 3, 0.5); width: 100%; height: 100%; position: absolute; left: 0; right: 0; display: block; margin: 0 auto; }
 .about a { color: #ffffff; font-size: 14px; text-decoration: underline; }
-.about a:hover { color: #ff2812; }
+.about a:hover { color: #E60023; }
 
 .about-content { padding: 100px 0; }
 .about-content p { margin-bottom: 30px; line-height: 1.4; }
@@ -232,18 +232,40 @@ ul.work-process > li:before { content: '\f005'; font-family: FontAwesome; positi
 .sign-area { position: relative; background: url("../images/image1.jpg") no-repeat center center; background-size: cover; height: 100vh; color: #ffffff; text-align: center; }
 .sign-area:before { content: ''; background-color: rgba(2, 3, 3, 0.5); width: 100%; height: 100%; position: absolute; left: 0; right: 0; display: block; margin: 0 auto; }
 
-.modal-title { margin: 0 auto; }
+.modal-title { margin: 0 auto; padding: 20px 0 10px 0; }
 
-.modal-header .close { margin: 0; }
+.modal-header { border: 0; }
+
+.modal-header .close { margin: 0; font-family: "Century Gothic"; font-weight: 400; color: #000; opacity: 1; text-shadow: none; outline: 0; padding: 0; }
+.modal-header .close:hover { color: #E60023; }
 
 .modal-dialog { max-width: 430px; }
 
 .modal-content { border-radius: 0; background-color: #F7F7F7; }
 
-.modal-body { padding: 0 30px; }
+.modal-body { padding: 0 30px 30px; border: 0; }
 
 .btn-sign { background-color: #337AB7; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; }
 .btn-sign:hover { background-color: #000; }
+
+.or-divider { position: relative; padding: 20px 0; }
+.or-divider:before { content: ''; position: absolute; width: 45%; height: 1px; left: 0; top: 50%; background-color: #D8D8D8; }
+.or-divider:after { content: ''; position: absolute; width: 45%; height: 1px; right: 0; top: 50%; background-color: #D8D8D8; }
+
+.modal-footer { border-top: 2px solid #D8D8D8; width: 100%; }
+
+.input-group-text { background-color: #F7F7F7; border-color: #D8D8D8; }
+
+.modal .form-control { background-color: #fff; border-color: #D8D8D8 !important; }
+.modal .form-control:focus { border-color: #E60023 !important; outline-color: #E60023 !important; box-shadow: none; }
+.modal a { color: #337AB7; font-size: 16px; font-family: Arial, sans-serif; }
+.modal a:hover { color: #000; }
+
+.social-buttons .btn { width: 32%; border: 0; font-size: 16px; font-family: Arial, sans-serif; color: #ffffff; }
+.social-buttons .btn:hover { background-color: #000; color: #ffffff; }
+.social-buttons .btn-primary { background-color: #337AB7; }
+.social-buttons .btn-secondary { background-color: #5BC0DE; }
+.social-buttons .btn-danger { background-color: #D9534F; }
 
 /* ========================================================================== > Comment start ========================================================================== */
 /* ========================================================================== > Comment start ========================================================================== */
