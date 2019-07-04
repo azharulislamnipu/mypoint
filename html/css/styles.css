@@ -84,9 +84,7 @@ body.modal-open { overflow: hidden; padding: 0 !important; }
 
 .sidebar { position: fixed; z-index: 10; left: 0; top: 50px; height: 100%; width: 60px; background: #000F26; border-right: 0; text-align: center; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
-.bottom-nav { position: fixed; left: 0; bottom: 0; width: 60px; }
-
-.sidebar:hover, .sidebar.active, .sidebar.hovered, .sidebar:hover .bottom-nav, .sidebar.active .bottom-nav, .sidebar.hovered .bottom-nav { width: 250px; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.sidebar:hover, .sidebar.active, .sidebar.hovered { width: 250px; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 .sidebar ul { list-style-type: none; padding: 0; margin: 0; }
 
@@ -214,9 +212,6 @@ button[aria-expanded="true"] { color: #E60023; }
 .header.bg-red .form-inline, .header.bg-pink .form-inline { padding-right: 75px; }
 
 .circle-logo { width: 50px; height: 50px; border-radius: 50%; border: 1px solid #ffffff; background-color: #E60023; text-align: center; margin: 0 auto; display: block; color: #ffffff; line-height: 46px; font-size: 16px; }
-
-.header.bg-pink .navbar-brand { width: 80px; height: 80px; padding: 15px 0; background-color: transparent; margin-right: 75px; }
-.header.bg-pink .circle-logo { width: 60px; height: 60px; line-height: 60px; font-size: 24px; border: 1px solid #ffffff; font-family: Arial, sans-serif; background-color: transparent; }
 
 /* ==========================================================================
 > communities start
@@ -394,18 +389,6 @@ ul.work-process > li:before { content: '\f005'; font-family: FontAwesome; positi
 .gallery-area .input-group-text { background-color: #fff; border-color: #ffffff; }
 .gallery-area .form-control { background-color: #fff; border-color: #ffffff; color: #000; padding: .375rem 0.5rem; }
 .gallery-area .form-control:focus { background-color: #fff; border-color: #ffffff; box-shadow: none; }
-
-.home-item { padding: 30px 0; color: white; }
-.home-item h2, .home-item h4 { font-weight: 400; }
-
-.list ul > li > a { color: #ffffff; font-family: Arial, sans-serif; padding: 10px 0; display: block; font-size: 20px; }
-.list ul > li > a:hover { color: #000; }
-
-.self-grid .self-item { float: left; width: 45%; height: 350px; margin: 0 10px 20px 10px; display: block; transition: all 0.35s ease-in-out; position: relative; background-repeat: no-repeat; background-size: cover; background-position: center; border: 2px solid transparent; }
-.self-grid .self-item:hover { border-color: #E60023; }
-.self-grid .wt-59 { width: 50%; }
-
-.user-icon { width: 40px; height: auto; display: inline-block; border-radius: 50%; border: 1px solid #000; }
 
 /* ========================================================================== > Comment start ========================================================================== */
 /* ========================================================================== > Comment start ========================================================================== */

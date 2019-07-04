@@ -268,9 +268,16 @@ padding: 0 !important;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+.bottom-nav{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+}
 .sidebar:hover,
 .sidebar.active,
-.sidebar.hovered {
+.sidebar.hovered ,.sidebar:hover .bottom-nav,
+.sidebar.active .bottom-nav, .sidebar.hovered .bottom-nav{
   width: 250px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -322,7 +329,7 @@ padding: 0 !important;
   line-height: 60px;
 }
 
-.main {
+.dashboard-main {
   position: relative;
   display: block;
   top: 50px;
@@ -332,12 +339,12 @@ padding: 0 !important;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.main.active {
+.dashboard-main.active {
   padding-left: 275px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.main .jumbotron {
+.dashboard-main .jumbotron {
   background-color: #fff;
   padding: 30px !important;
   border: 1px solid #dfe8f1;
@@ -345,7 +352,7 @@ padding: 0 !important;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-.main .jumbotron h1 {
+.dashboard-main .jumbotron h1 {
   font-size: 24px;
   margin: 0;
   padding: 0;
@@ -411,3 +418,4 @@ padding: 0 !important;
   width: 100%;
   height: 100%;
 }
+

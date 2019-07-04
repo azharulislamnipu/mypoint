@@ -228,6 +228,25 @@ button[aria-expanded="true"]{
   line-height: 46px;
   font-size: 16px;
 }
+
+.header.bg-pink{
+  .navbar-brand{
+    width: 80px;
+    height: 80px;
+    padding: 15px 0;
+    background-color: transparent;
+    margin-right: 75px;
+  }
+  .circle-logo{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    border: 1px solid $white;
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+  }
+}
 /* ==========================================================================
 > communities start
 ========================================================================== */
@@ -929,3 +948,53 @@ ul.work-process>li{
 }
 
 
+.home-item{
+  padding: 30px 0;
+  color: white;
+  h2,h4{
+    font-weight: $w-400;
+  }
+}
+.list{
+  ul>li>a{
+    color: $white;
+    font-family: Arial, sans-serif;
+    padding: 10px 0;
+    display: block;
+    font-size: 20px;
+    &:hover{
+      color: $black;
+    }
+  }
+}
+
+.self-grid {
+  .self-item {
+    float: left;
+    width: 45%;
+    height: 350px;
+    margin: 0 10px 20px 10px;
+    display: block;
+    transition: all 0.35s ease-in-out;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid transparent;
+    &:hover{
+     border-color: $red;
+    }
+  }
+  .wt-59{
+    width: 50%;
+  }
+
+
+}
+.user-icon{
+  width: 40px;
+  height: auto;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid $black;
+}

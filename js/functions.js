@@ -58,10 +58,19 @@
             }
         });
 
+        $('.self-grid').isotope({
+            itemSelector: '.self-item',
+            percentPosition: true,
+            masonry: {
+                columnWidth: 1,
+
+            }
+        });
+
         lightbox.option({
             'resizeDuration': 200,
             'wrapAround': true
-        })
+        });
 
         slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
             let slidesLength = slick.$slides.length - 1,
