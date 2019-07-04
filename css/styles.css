@@ -179,13 +179,38 @@ h6 { line-height: 18px; font-style: normal; }
 /* ========================================================================== > header ========================================================================== */
 .header { position: absolute; width: 100%; z-index: 9999; }
 
-.navbar { padding: 20px; background-color: transparent; }
+.navbar { padding: 0; background-color: transparent; }
+
+.navbar-nav > li > a { padding: 20px 18px; display: block; }
+
+/* Megadrop width dropdown */
+.navbar-nav > li > .megadrop { opacity: 1; visibility: hidden; position: fixed; list-style: none; top: 70px; left: 0px; width: 100%; min-height: 100px; text-align: left; margin-top: 30px; padding-bottom: 20px; z-index: 99; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; background-color: #ffffff; }
+.navbar-nav > li > .megadrop .title { font-size: 16px; padding: 10px 0; font-weight: bold; margin: 5px 0 5px 0; color: #000; text-decoration: underline; }
+.navbar-nav > li > .megadrop .title:hover { color: #E60023; }
+
+.navbar-nav > li:hover .megadrop { opacity: 1; visibility: visible; margin-top: 0px; }
+
+.navbar-nav ul li:hover:after { color: #E60023; }
+
+.navbar-nav .col ul { padding: 0; margin: 0; }
+
+.navbar-nav .col ul li { padding: 0; list-style: none; font-size: 11px; }
+
+.navbar-nav .col h3 { font-size: 16px; padding: 10px 0; font-weight: bold; margin: 5px 0 5px 0; color: #000; }
+
+.navbar-nav .col ul li a { display: block; padding: 0 0 7px 0; color: #000; font-size: 12px; font-family: Arial, sans-serif; }
+
+.navbar-nav .col ul li a:hover { color: #E60023; text-decoration: underline; }
+
+.navbar-nav > li > ul li ul, .menu li > ul li, .menu > li > .megadrop, .menu > li > ul, .menu > li { transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-outs; }
 
 a.navbar-brand { font-family: "Roboto Slab", serif; font-size: 24px; }
 a.navbar-brand:hover { color: inherit; }
 
-.navbar-expand-lg .navbar-nav .nav-link { padding: 0 10px; font-size: 16px; font-family: "Century Gothic"; color: #000; }
+.navbar-expand-lg .navbar-nav .nav-link { padding: 30px 10px; font-size: 16px; font-family: "Century Gothic"; color: #000; }
 .navbar-expand-lg .navbar-nav .nav-link:hover { color: #E60023; }
+
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link { color: #E60023; }
 
 .navbar p { margin: 0; color: #000; }
 .navbar p > a { background-color: transparent; color: #000; }
@@ -376,9 +401,9 @@ ul.work-process > li:before { content: '\f005'; font-family: FontAwesome; positi
 .age-box { max-width: 300px; margin: 0 auto; }
 .age-box p { padding: 30px 0; }
 
-.item { width: 100px; height: 100px; border-radius: 3px; background-color: #E60023; position: relative; }
-.item p { margin: -30px 0 0 5px; color: #ffffff; }
-.item img { border-radius: 5px; }
+.interest-box .item { width: 100px; height: 100px; border-radius: 3px; background-color: #E60023; position: relative; }
+.interest-box .item p { margin: -30px 0 0 5px; color: #ffffff; }
+.interest-box .item img { border-radius: 5px; }
 
 .interest-modal h4.text { padding: 0 0 30px 0; font-weight: 300; }
 .interest-modal .interest-box { height: 309px; overflow-y: scroll; }
@@ -406,6 +431,12 @@ ul.work-process > li:before { content: '\f005'; font-family: FontAwesome; positi
 .self-grid .wt-59 { width: 50%; }
 
 .user-icon { width: 40px; height: auto; display: inline-block; border-radius: 50%; border: 1px solid #000; }
+
+.circle-img { width: 40px; height: 40px; display: inline-block; border-radius: 50%; }
+
+.client-review { max-width: 240px; padding: 15px 10px; position: absolute; bottom: 30px; left: 2%; z-index: 9999; background-color: #ffffff; }
+.client-review:before { content: ''; position: absolute; left: 30px; bottom: -21%; width: 60px; height: 30px; border-top: solid 30px #ffffff; border-left: solid 30px transparent; border-right: solid 30px transparent; }
+.client-review .media-body p { margin: 0; }
 
 /* ========================================================================== > Comment start ========================================================================== */
 /* ========================================================================== > Comment start ========================================================================== */
