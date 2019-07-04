@@ -15,6 +15,7 @@
           rel="stylesheet">
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/lightbox.min.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -71,7 +72,7 @@
         <section class="gallery-area">
             <div class="container">
                <div class="row">
-                   <div class="col-10 m-auto">
+                   <div class="col-12">
                        <div class="input-group form-group ">
                            <div class="input-group-prepend">
                                <span class="input-group-text"><i class="fa fa-search"></i></span>
@@ -81,36 +82,39 @@
                    </div>
                </div>
             </div>
-            <div class="container-fluid">
-                <div class="row align-items-center text-center">
-                    <div class="grid-gallery">
-                        <div class="grid-sizer"></div>
-                        <div class="gallery-item">
-                            <img src="images/image45.jpg" alt="">
-                        </div>
-                        <div class="gallery-item h-250 wt-300">
-                            <img src="images/image49.jpg" alt="">
-                        </div>
-                        <div class="gallery-item  wt-500">
-                            <img src="images/image50.jpg" alt="">
-                        </div>
-                        <div class="gallery-item h-200 wt-250">
-                            <img src="images/image48.jpg" alt="">
-                        </div>
-                        <div class="gallery-item  wt-180">
-                            <img src="images/image21.jpg" alt="">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/image47.jpg" alt="">
-                        </div>
-                        <div class="gallery-item h-250 wt-300">
-                            <img src="images/image20.jpg" alt="">
-                        </div>
-                        <div class="gallery-item h-300 wt-100">
-                            <img src="images/image46.jpg" alt="">
-                        </div>
-                    </div>
+            <div class="container-fluid p-5">
+                <div class="masnory-grid justify-content-center">
+                    <div class="grid-sizer"></div>
+
+                    <a  href="images/image45.jpg" data-lightbox="example-set" data-title=" ">
+                        <div class="gallery-item " style="background-image: url('images/image45.jpg')"></div>
+                    </a>
+                    <a  href="images/image49.jpg" data-lightbox="example-set" data-title=" ">
+                        <div class="gallery-item h-300 wt-500" style="background-image: url('images/image49.jpg')"> </div>
+                    </a>
+                    <a  href="images/image48.jpg" data-lightbox="example-set" data-title=" ">
+                        <div class="gallery-item h-250 " style="background-image: url('images/image48.jpg')" > </div>
+                    </a>
+                    <a  href="images/image50.jpg" data-lightbox="example-set" data-title=" ">
+                        <div class="gallery-item  w-800" style="background-image: url('images/image50.jpg')"></div>
+                    </a>
+                    <a  href="images/image21.jpg" data-lightbox="example-set" data-title=" ">
+                        <div class="gallery-item h-250 wt-300" style="background-image: url('images/image21.jpg')"> </div>
+                    </a>
+
+                    <a  href="images/image20.jpg" data-lightbox="example-set" data-title=" ">
+                        <div class="gallery-item  wt-500 h-400" style="background-image: url('images/image20.jpg')"></div>
+                    </a>
+                    <a  href="images/image47.jpg" data-lightbox="example-set" data-title=" ">
+                        <div class="gallery-item w-355 " style="background-image: url('images/image47.jpg')"></div>
+                    </a>
+                    <a  href="images/image46.jpg" data-lightbox="example-set" data-title=" ">
+                        <div class="gallery-item wt-200 h-400" style="background-image: url('images/image46.jpg')"></div>
+                    </a>
+
+
                 </div>
+
             </div>
         </section>
 
@@ -131,6 +135,7 @@
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/lightbox.min.js"></script>
 <script src="js/functions.js"></script>
 </body>
 </html>
