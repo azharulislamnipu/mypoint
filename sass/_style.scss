@@ -273,7 +273,7 @@ button[aria-expanded="true"]{
     color: $white;
   }
   .navbar-expand-lg .navbar-nav .nav-link{
-    padding: 30px 10px;
+    padding: 29px 10px;
     font-size: $base-font-size;
     font-family: $gothic;
     color: $black;
@@ -1123,6 +1123,82 @@ ul.work-process>li{
 }
 
 
+.ask-search-box{
+  h3{
+    color: $black;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width: 12%;
+      height: 2px;
+      background-color: #000;
+      margin: 0 auto;
+      bottom: 17px;
+      left: 0;
+      right: 0;
+      display: block;
+    }
+  }
+  .form-group{
+    border: 2px solid $black;
+    display: block;
+    padding: 7px;
+    border-radius: 50px;
+    background-color: $white;
+    p{
+      margin: 0;
+    }
+    .form-control{
+      width: 90%;
+      display: inline-block;
+      border: 0;
+      outline: 0;
+      box-shadow: none;
+    }
+    i{
+      font-weight: 700;
+    }
+  }
+}
 
+.ask-area{
+  position: relative;
+  padding: 20px 0 100px 0;
+  h5.title{
+    max-width: 225px;
+    font-weight: $w-300;
+  }
+}
+.list-sex-type{
+  li>a{
+    color: $black;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    padding: 5px 0;
+    text-decoration: underline;
+    display: block;
+    &:hover{
+      color: $red;
+    }
+  }
+}
+.default-search{
+  .form-group{
+    background-color: #dddddd;
+    padding: 2px;
+    border-radius: 8px;
+    margin: 0;
+  }
+  .form-control{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+  }
+   .input-group>.input-group-prepend>.input-group-text{
+     background-color: transparent;
+     border: 0;
+   }
 
-
+}

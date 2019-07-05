@@ -231,7 +231,7 @@ button[aria-expanded="true"] { color: #E60023; }
 .header.bg-red .navbar-toggler, .header.bg-pink .navbar-toggler { padding-right: 30px; }
 .header.bg-red .navbar, .header.bg-pink .navbar { padding: 0; }
 .header.bg-red button[aria-expanded="true"], .header.bg-pink button[aria-expanded="true"] { color: #ffffff; }
-.header.bg-red .navbar-expand-lg .navbar-nav .nav-link, .header.bg-pink .navbar-expand-lg .navbar-nav .nav-link { padding: 30px 10px; font-size: 16px; font-family: "Century Gothic"; color: #000; }
+.header.bg-red .navbar-expand-lg .navbar-nav .nav-link, .header.bg-pink .navbar-expand-lg .navbar-nav .nav-link { padding: 29px 10px; font-size: 16px; font-family: "Century Gothic"; color: #000; }
 .header.bg-red .navbar-expand-lg .navbar-nav .nav-link:hover, .header.bg-pink .navbar-expand-lg .navbar-nav .nav-link:hover { color: #ffffff; }
 .header.bg-red .navbar-expand-lg .nav-item.active .nav-link, .header.bg-pink .navbar-expand-lg .nav-item.active .nav-link { color: #ffffff; }
 .header.bg-red .navbar p > a:hover, .header.bg-pink .navbar p > a:hover { color: #ffffff; }
@@ -437,6 +437,23 @@ ul.work-process > li:before { content: '\f005'; font-family: FontAwesome; positi
 .client-review { max-width: 240px; padding: 15px 10px; position: absolute; bottom: 30px; left: 2%; z-index: 9999; background-color: #ffffff; }
 .client-review:before { content: ''; position: absolute; left: 30px; bottom: -21%; width: 60px; height: 30px; border-top: solid 30px #ffffff; border-left: solid 30px transparent; border-right: solid 30px transparent; }
 .client-review .media-body p { margin: 0; }
+
+.ask-search-box h3 { color: #000; position: relative; }
+.ask-search-box h3:before { content: ''; position: absolute; width: 12%; height: 2px; background-color: #000; margin: 0 auto; bottom: 17px; left: 0; right: 0; display: block; }
+.ask-search-box .form-group { border: 2px solid #000; display: block; padding: 7px; border-radius: 50px; background-color: #ffffff; }
+.ask-search-box .form-group p { margin: 0; }
+.ask-search-box .form-group .form-control { width: 90%; display: inline-block; border: 0; outline: 0; box-shadow: none; }
+.ask-search-box .form-group i { font-weight: 700; }
+
+.ask-area { position: relative; padding: 20px 0 100px 0; }
+.ask-area h5.title { max-width: 225px; font-weight: 300; }
+
+.list-sex-type li > a { color: #000; font-size: 14px; font-family: Arial, sans-serif; padding: 5px 0; text-decoration: underline; display: block; }
+.list-sex-type li > a:hover { color: #E60023; }
+
+.default-search .form-group { background-color: #dddddd; padding: 2px; border-radius: 8px; margin: 0; }
+.default-search .form-control { background-color: transparent; border: 0; outline: 0; box-shadow: none; }
+.default-search .input-group > .input-group-prepend > .input-group-text { background-color: transparent; border: 0; }
 
 /* ========================================================================== > Comment start ========================================================================== */
 /* ==========================================================================
