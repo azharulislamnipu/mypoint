@@ -118,7 +118,7 @@ h6 {
   width: 100%;
   min-height: 100px;
   text-align: left;
-  margin-top:30px;
+   margin: 0;
  padding-bottom: 20px;
   z-index: 99;
   border-bottom-left-radius: 5px;
@@ -262,7 +262,7 @@ button[aria-expanded="true"]{
   color: $red;
 }
 
-.header.bg-red,.header.bg-pink {
+.header.bg-red,.header.bg-pink{
   .navbar-toggler{
     padding-right: 30px;
   }
@@ -304,6 +304,25 @@ button[aria-expanded="true"]{
   }
 
 }
+header.bg-white {
+  .navbar-toggler{
+    padding-right: 30px;
+  }
+  .navbar{
+    padding: 0;
+  }
+  .navbar-brand{
+    width: 80px;
+    height: 80px;
+    padding: 15px 0;
+    background-color: $white;
+    margin-right: 75px;
+  }
+  .form-inline{
+    padding-right: 75px;
+  }
+}
+
 .circle-logo{
   width: 50px;
   height: 50px;
@@ -1195,10 +1214,85 @@ ul.work-process>li{
     border: 0;
     outline: 0;
     box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
   }
    .input-group>.input-group-prepend>.input-group-text{
      background-color: transparent;
      border: 0;
    }
+
+}
+.week-container{
+  max-width: 700px;
+  margin: 0 auto;
+  border-top: 1px solid $black;
+  padding-top: 40px;
+}
+.week-content-box{
+  h2{
+    padding: 0;
+    line-height: 36px;
+    font-weight: $w-400;
+  }
+  p.date{
+    color: #8d8d8d;
+    font-size: 14px;
+
+  }
+}
+.week-content-box p>img{
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+}
+
+.social-share{
+  .btn{
+    border-radius: 0;
+    color: $white;
+    width: 24%;
+    &:hover{
+      background-color: $black;
+    }
+  }
+  .btn-fb{
+    background-color: #47639E;
+  }
+  .btn-tw{
+    background-color: #1DA1F2;
+  }
+  .btn-ev{
+    background-color: #4c4c4c;
+  }
+  .btn-sh{
+    background-color: #35a930;
+  }
+}
+.week-content-box {
+ p{
+   line-height: 1.5;
+ }
+}
+.suggest-title{
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    width: 68%;
+    height: 2px;
+    background-color: $red;
+    margin: 0 auto;
+    bottom: 17px;
+    left: 0;
+    display: block;
+  }
+}
+
+.week-area{
+  position: relative;
+  padding: 10px 0 50px 0;
+}
+.top-tile{
 
 }

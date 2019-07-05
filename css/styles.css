@@ -39,6 +39,8 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 
 .pt-80 { padding-top: 80px; }
 
+.bg-white { background-color: #E60023; }
+
 .bg-red { background-color: #E60023; }
 
 .bg-pink { background: #ff015b; background: linear-gradient(90deg, #ff015b 0%, #ff4f8d 41%, #fe669b 100%); }
@@ -184,7 +186,7 @@ h6 { line-height: 18px; font-style: normal; }
 .navbar-nav > li > a { padding: 20px 18px; display: block; }
 
 /* Megadrop width dropdown */
-.navbar-nav > li > .megadrop { opacity: 1; visibility: hidden; position: fixed; list-style: none; top: 70px; left: 0px; width: 100%; min-height: 100px; text-align: left; margin-top: 30px; padding-bottom: 20px; z-index: 99; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; background-color: #ffffff; }
+.navbar-nav > li > .megadrop { opacity: 1; visibility: hidden; position: fixed; list-style: none; top: 70px; left: 0px; width: 100%; min-height: 100px; text-align: left; margin: 0; padding-bottom: 20px; z-index: 99; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; background-color: #ffffff; }
 .navbar-nav > li > .megadrop .title { font-size: 16px; padding: 10px 0; font-weight: bold; margin: 5px 0 5px 0; color: #000; text-decoration: underline; }
 .navbar-nav > li > .megadrop .title:hover { color: #E60023; }
 
@@ -237,6 +239,11 @@ button[aria-expanded="true"] { color: #E60023; }
 .header.bg-red .navbar p > a:hover, .header.bg-pink .navbar p > a:hover { color: #ffffff; }
 .header.bg-red .navbar-brand, .header.bg-pink .navbar-brand { width: 80px; height: 80px; padding: 15px 0; background-color: #ffffff; margin-right: 75px; }
 .header.bg-red .form-inline, .header.bg-pink .form-inline { padding-right: 75px; }
+
+header.bg-white .navbar-toggler { padding-right: 30px; }
+header.bg-white .navbar { padding: 0; }
+header.bg-white .navbar-brand { width: 80px; height: 80px; padding: 15px 0; background-color: #ffffff; margin-right: 75px; }
+header.bg-white .form-inline { padding-right: 75px; }
 
 .circle-logo { width: 50px; height: 50px; border-radius: 50%; border: 1px solid #ffffff; background-color: #E60023; text-align: center; margin: 0 auto; display: block; color: #ffffff; line-height: 46px; font-size: 16px; }
 
@@ -452,8 +459,29 @@ ul.work-process > li:before { content: '\f005'; font-family: FontAwesome; positi
 .list-sex-type li > a:hover { color: #E60023; }
 
 .default-search .form-group { background-color: #dddddd; padding: 2px; border-radius: 8px; margin: 0; }
-.default-search .form-control { background-color: transparent; border: 0; outline: 0; box-shadow: none; }
+.default-search .form-control { background-color: transparent; border: 0; outline: 0; box-shadow: none; padding-left: 0; padding-right: 0; }
 .default-search .input-group > .input-group-prepend > .input-group-text { background-color: transparent; border: 0; }
+
+.week-container { max-width: 700px; margin: 0 auto; border-top: 1px solid #000; padding-top: 40px; }
+
+.week-content-box h2 { padding: 0; line-height: 36px; font-weight: 400; }
+.week-content-box p.date { color: #8d8d8d; font-size: 14px; }
+
+.week-content-box p > img { width: 40%; float: left; margin-right: 20px; }
+
+.social-share .btn { border-radius: 0; color: #ffffff; width: 24%; }
+.social-share .btn:hover { background-color: #000; }
+.social-share .btn-fb { background-color: #47639E; }
+.social-share .btn-tw { background-color: #1DA1F2; }
+.social-share .btn-ev { background-color: #4c4c4c; }
+.social-share .btn-sh { background-color: #35a930; }
+
+.week-content-box p { line-height: 1.5; }
+
+.suggest-title { position: relative; }
+.suggest-title:before { content: ''; position: absolute; width: 68%; height: 2px; background-color: #E60023; margin: 0 auto; bottom: 17px; left: 0; display: block; }
+
+.week-area { position: relative; padding: 10px 0 50px 0; }
 
 /* ========================================================================== > Comment start ========================================================================== */
 /* ==========================================================================
@@ -461,7 +489,8 @@ ul.work-process > li:before { content: '\f005'; font-family: FontAwesome; positi
 ========================================================================== */
 .categories-product { position: relative; padding: 36px 0 50px 0; }
 .categories-product .page-name p { color: #999999; margin-bottom: 45px; }
-.categories-product h6.title { font-weight: 700; letter-spacing: 4px; margin-bottom: 45px; }
+.categories-product h6.title { font-weight: 400; font-size: 30px; letter-spacing: 4px; padding: 5px 0; }
+.categories-product p { margin-bottom: 30px; }
 
 .cat-list .acc_trigger { display: block; padding: 12.5px 0px; }
 .cat-list .acc_trigger.active { font-weight: 700; color: #000; }

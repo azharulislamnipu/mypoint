@@ -9,9 +9,13 @@
     margin-bottom: 45px;
   }
   h6.title{
-    font-weight: $w-700;
+    font-weight: $w-400;
+    font-size: 30px;
     letter-spacing: 4px;
-    margin-bottom: 45px;
+    padding: 5px 0;
+  }
+  p{
+    margin-bottom: 30px;
   }
 }
 .cat-list{
