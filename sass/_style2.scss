@@ -1,3 +1,226 @@
 /* ==========================================================================
-  > Comment start
-  ========================================================================== */
+> categories-product start
+========================================================================== */
+.categories-product{
+  position: relative;
+  padding: 36px 0 50px 0;
+  .page-name p{
+    color: #999999;
+    margin-bottom: 45px;
+  }
+  h6.title{
+    font-weight: $w-700;
+    letter-spacing: 4px;
+    margin-bottom: 45px;
+  }
+}
+.cat-list{
+  .acc_trigger{
+    display: block;
+    padding: 12.5px 0px;
+
+  }
+  .acc_trigger.active{
+    font-weight: $w-700;
+    color: $black;
+  }
+  li{
+    p{
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      color: $black;
+      font-weight: $w-700;
+    }
+  }
+}
+.cat-list>li.active>p{
+  font-weight: 700;
+  color: #000000;
+}
+.cat-list>li a{
+  color: $black;
+  width: 100%;
+}
+
+.cat-list>li i{
+  color: $black;
+  cursor: pointer;
+  float: right;
+}
+.cat-list .acc_container>.card a.active {
+  font-weight: 700;
+  color: #000000;
+}
+
+
+/* ==========================================================================
+> woocommerce start
+========================================================================== */
+
+.woocommerce ul.products, .woocommerce-page ul.products{
+  margin: 0;
+  padding: 0;
+}
+.woocommerce ul.products.columns-3 li.product, .woocommerce-page ul.products.columns-3 li.product {
+  margin-right: 21px;
+  min-height: 670px;
+}
+
+
+
+.woocommerce-products-header{
+  h6{
+    padding: 10px 0;
+    text-transform: uppercase;
+    color: $black;
+    letter-spacing: 2px;
+    border-bottom: 1px solid $black;
+  }
+}
+
+.woocommerce .products ul, .woocommerce ul.products{
+  margin: 0;
+}
+.woocommerce ul.products li.product .price{
+  font-size: $base-font-size;
+  color: #999999;
+
+}
+.woocommerce .woocommerce-ordering select{
+  border: 0;
+  outline: 0;
+
+  color: #666666;
+  font-size: $base-font-size;
+}
+.woocommerce-ordering label{
+
+  color: #666666;
+  font-size: $base-font-size;
+}
+.woocommerce .woocommerce-result-count, .woocommerce-page .woocommerce-result-count{
+
+  color: #666666;
+  font-size: $base-font-size;
+
+}
+
+.cat-list{
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+
+
+.sub-cat{
+  >li a{
+    color: #9b999b;
+    padding: 7px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    display: block;
+    &:hover{
+      color: $black;
+    }
+  }
+>li.active a{
+  color: $black;
+  font-weight: $w-700;
+}
+}
+
+a.btn-discover{
+  width: auto !important;
+  padding: 10px 30px;
+  background-color: #333333;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  font-weight: $w-400;
+  text-transform: uppercase;
+  color: $white;
+  border-radius: 0;
+  &:hover{
+    color: $white;
+    background-color: $black;
+  }
+}
+
+span.discount{
+  width: 50px;
+  height: 50px;
+  background: #000;
+  display: block;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  right: 3%;
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  font-style: italic;
+  top: 0%;
+}
+span.new{
+  padding: 10px 20px;
+  background: #ebebeb;
+  border-radius: 6px;
+  width: 30%;
+  display: block;
+  margin: 10px auto;
+  font-weight: $w-300;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+h4.product-list-title{
+ padding: 0;
+  margin-bottom: 30px;
+  color: #000;
+  a{
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-weight: $w-600;
+  }
+}
+.pl-text{
+  margin-bottom: 30px;
+}
+.pl-text p{
+  font-size: 14px;
+  color: #949494;;
+  line-height: 1.5;
+}
+.pl-text-wrapper{
+ .main-price{
+   padding: 47px 0 ;
+ }
+}
+
+ins span.woocommerce-Price-amount.amount {
+  color: $red;
+  text-decoration: none;
+}
+.your-save{
+  width: 60%;
+  margin: 10px auto 30px auto;
+  padding: 7px;
+  background: #ebebeb;
+  border-radius: 6px;
+  color: #949494;;
+  span{
+    margin: 0;
+  }
+}
+.woocommerce ul.products li.product .price{
+  margin-bottom: 0;
+}
+.pl-inner{
+  .btn-discover{
+     background-color: $white;
+    border: 2px solid $black;
+    color: $black;
+    &:hover{
+      border-color: $black;
+      background-color: $black;
+    }
+  }
+}
