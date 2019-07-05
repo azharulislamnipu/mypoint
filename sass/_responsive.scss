@@ -40,6 +40,11 @@
     }
 
   }
+
+  .woocommerce ul.products.columns-3 li.product, .woocommerce-page ul.products.columns-3 li.product {
+    width: 100%;
+  }
+
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -88,11 +93,60 @@
     }
   }
 
+  .woocommerce ul.products.columns-3 li.product:nth-child(2n), .woocommerce-page ul.products.columns-3 li.product:nth-child(2n){
+    margin-right: 0;
+  }
+  .woocommerce ul.products.columns-3 li.product, .woocommerce-page ul.products.columns-3 li.product {
+    width: 47%;
+
+  }
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+
+}
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape){
+
+
+}
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio : 3)
+{
+
+}
+
+@media only screen
+and (min-device-width : 360px)
+and (max-device-width : 740px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio : 3)
+{
+
+
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+
+  .woocommerce ul.products.columns-3 li.product:nth-child(2n), .woocommerce-page ul.products.columns-3 li.product:nth-child(2n){
+   margin-right: 0;
+  }
+  .woocommerce ul.products.columns-3 li.product, .woocommerce-page ul.products.columns-3 li.product {
+    width: 47%;
+
+  }
 }
 
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .woocommerce ul.products.columns-3 li.product:nth-child(3n), .woocommerce-page ul.products.columns-3 li.product:nth-child(3n){
+    margin-right: 0;
+  }
 
 }
 
