@@ -1,3 +1,33 @@
 /* ==========================================================================
   > Comment start
   ========================================================================== */
+.gallery-images {
+
+  .card{
+    border: 0;
+    img{
+      padding: 0 0 13px 0;
+    }
+    h4{
+      color: $red;
+    }
+  }
+  .custom-list-group-item {
+    position: relative;
+    display: block;
+    background-color: #E6E6E6 ;
+    border: none;
+    p{
+      text-decoration: underline;
+    }
+  }
+
+  .list-group-item {
+    position: relative;
+    display: block;
+    padding: 2px 1px;
+    background-color:#E6E6E6;
+    border: none;
+  }
+
+}

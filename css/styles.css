@@ -484,6 +484,13 @@ ul.work-process > li:before { content: '\f005'; font-family: FontAwesome; positi
 .week-area { position: relative; padding: 10px 0 50px 0; }
 
 /* ========================================================================== > Comment start ========================================================================== */
+.gallery-images .card { border: 0; }
+.gallery-images .card img { padding: 0 0 13px 0; }
+.gallery-images .card h4 { color: #E60023; }
+.gallery-images .custom-list-group-item { position: relative; display: block; background-color: #E6E6E6; border: none; }
+.gallery-images .custom-list-group-item p { text-decoration: underline; }
+.gallery-images .list-group-item { position: relative; display: block; padding: 2px 1px; background-color: #E6E6E6; border: none; }
+
 /* ==========================================================================
 > categories-product start
 ========================================================================== */
