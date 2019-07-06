@@ -522,7 +522,7 @@ ul.work-process > li:before { content: '\f005'; font-family: FontAwesome; positi
 ========================================================================== */
 .woocommerce ul.products, .woocommerce-page ul.products { margin: 0; padding: 0; }
 
-.woocommerce ul.products.columns-3 li.product, .woocommerce-page ul.products.columns-3 li.product { margin-right: 21px; min-height: 670px; }
+.woocommerce ul.products.columns-3 li.product, .woocommerce-page ul.products.columns-3 li.product { margin-right: 21px; min-height: 670px; text-align: center; }
 
 .woocommerce-products-header h6 { padding: 10px 0; text-transform: uppercase; color: #000; letter-spacing: 2px; border-bottom: 1px solid #000; }
 
