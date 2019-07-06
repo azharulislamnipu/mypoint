@@ -367,6 +367,111 @@
                 </div>
             </div>
 
+            <div class="item">
+                <!-- /.header start  -->
+                <header class="header first-header ">
+                    <nav class="navbar navbar-expand-lg ">
+                        <a class="navbar-brand red-text" href="index.html">MyPoint</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar5" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="container">
+                            <div class="collapse navbar-collapse" id="navbar5">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="topics.html">Topics <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="product.html">Products</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="communities.html">Communities</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About</a>
+                                    </li>
+
+                                </ul>
+                                <form class="form-inline my-2 my-lg-0 ml-sm-2">
+                                    <p>Hello , <a href="javascript:void(0)" class=" sing-modal-btn my-2 my-sm-0">Sign in</a></p>
+
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+
+                </header>
+                <!-- /.header -->
+                <div style="background-image: url('images/image1.jpg');"
+                     class="slide">
+
+                    <div class="modal fade sign-modal show"  style="display: block;">
+                        <div class="modal-dialog modal-dialog-centered " role="document">
+                            <div class="modal-content">
+                                <div class="modal-header ">
+                                    <h4 class="modal-title text-center" >Sign In</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true"> X</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+
+
+
+
+                                    <form  action="welcome.html" >
+
+                                        <div class="input-group form-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="text" name="username" class="form-control" placeholder="username"/>
+
+                                        </div>
+                                        <div class="input-group form-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                                            </div>
+                                            <input type="password" name="password" class="form-control" placeholder="password"/>
+
+                                        </div>
+
+                                        <p   class="red-text d-none error-text clearfix">Please enter Your username and Password</p>
+                                        <div class="form-group">
+                                            <button type="submit"  class="btn  sign-btn btn-block white-text">Sign in</button>
+                                        </div>
+
+                                        <div class="checkbox clearfix">
+                                            <div class="float-left">
+                                                <label>
+                                                    <input type="checkbox"> Remember me
+                                                </label>
+                                            </div>
+                                            <div class="float-right">
+                                                <a href="">Forgot Password?</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="or-divider text-center "><p class="m-0">or</p></div>
+
+                                        <div class="social-buttons clearfix text-center">
+                                            <p>login with your social media account</p>
+                                            <a href="#" class="btn btn-fb btn-primary"><i class="fa fa-facebook"></i> Facebook</a>
+                                            <a href="#" class="btn btn-tw btn-secondary"><i class="fa fa-twitter"></i> Twitter</a>
+                                            <a href="#" class="btn btn-tw btn-danger"><i class="fa fa-google-plus"></i> Google</a>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="modal-footer text-center ">
+                                    <p class="m-auto">Don't have an account? <a href="">Sign up Here</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <!-- /.slider-area end  -->
 
@@ -393,22 +498,26 @@
             <div class="modal-body">
 
 
-                <form action="">
+                <form action="welcome.html" id="sign-in-form" >
 
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-user"></i></span>
                         </div>
-                        <input type="text" name="" class="form-control" placeholder="username"/>
+                        <input type="text" name="username" class="form-control" placeholder="username"/>
+
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-lock"></i></span>
                         </div>
-                        <input type="password" name="" class="form-control" placeholder="password"/>
+                        <input type="password" name="password" class="form-control" placeholder="password"/>
+
                     </div>
+
+                    <p id="error" class="red-text d-none error-text clearfix">Please enter Your username and Password</p>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-sign  btn-block">Sign in</button>
+                        <a href="javascript:void (0)" class="btn btn-sign  btn-block white-text">Sign in</a>
                     </div>
 
                     <div class="checkbox clearfix">

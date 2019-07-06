@@ -185,7 +185,7 @@ h6 { line-height: 18px; font-style: normal; }
 /* ========================================================================== > header ========================================================================== */
 .header { position: absolute; width: 100%; z-index: 9999; }
 
-.navbar { padding: 0px 40px; background-color: transparent; }
+.navbar { padding: .5rem 40px; background-color: transparent; }
 
 .navbar-nav > li > a { padding: 20px 18px; display: block; }
 
@@ -361,8 +361,8 @@ ul.work-process > li:before { content: '\f005'; font-family: FontAwesome; positi
 
 .modal-body { padding: 0 30px 30px; border: 0; }
 
-.btn-sign { background-color: #337AB7; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; }
-.btn-sign:hover { background-color: #000; }
+.btn-sign, .sign-btn { background-color: #337AB7; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; }
+.btn-sign:hover, .sign-btn:hover { background-color: #000; }
 
 .or-divider { position: relative; padding: 20px 0; }
 .or-divider:before { content: ''; position: absolute; width: 45%; height: 1px; left: 0; top: 50%; background-color: #D8D8D8; }
@@ -374,8 +374,8 @@ ul.work-process > li:before { content: '\f005'; font-family: FontAwesome; positi
 
 .modal .form-control { background-color: #fff; border-color: #D8D8D8 !important; }
 .modal .form-control:focus { border-color: #E60023 !important; outline-color: #E60023 !important; box-shadow: none; }
-.modal a { color: #337AB7; font-size: 16px; font-family: Arial, sans-serif; }
-.modal a:hover { color: #000; }
+.modal a { color: #ffffff; font-size: 16px; font-family: Arial, sans-serif; }
+.modal a:hover { color: #ffffff; }
 
 .social-buttons .btn { width: 32%; border: 0; font-size: 16px; font-family: Arial, sans-serif; color: #ffffff; }
 .social-buttons .btn:hover { background-color: #000; color: #ffffff; }
@@ -488,6 +488,8 @@ ul.work-process > li:before { content: '\f005'; font-family: FontAwesome; positi
 .suggest-title:before { content: ''; position: absolute; width: 68%; height: 2px; background-color: #E60023; margin: 0 auto; bottom: 17px; left: 0; display: block; }
 
 .week-area { position: relative; padding: 10px 0 50px 0; }
+
+.error-text { width: 100%; display: block; text-align: center; }
 
 /* ========================================================================== > Comment start ========================================================================== */
 .gallery-images .card { border: 0; }

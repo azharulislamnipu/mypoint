@@ -94,7 +94,7 @@ h6 {
 }
 
 .navbar {
-  padding: 0px 40px;
+  padding: .5rem 40px;
   background-color: transparent;
 }
 
@@ -764,7 +764,7 @@ ul.work-process>li{
   padding: 0 30px 30px;
   border: 0;
 }
-.btn-sign{
+.btn-sign,.sign-btn{
   background-color: #337AB7;
   color: $white;
   font-family: Arial, sans-serif;
@@ -773,6 +773,7 @@ ul.work-process>li{
     background-color: $black;
   }
 }
+
 
 .or-divider{
   position: relative;
@@ -816,11 +817,11 @@ ul.work-process>li{
     }
   }
   a{
-    color: #337AB7;
+    color: $white;
     font-size: 16px;
     font-family: Arial, sans-serif;
     &:hover{
-      color: $black;
+      color: $white;
     }
   }
 }
@@ -1312,6 +1313,8 @@ ul.work-process>li{
   position: relative;
   padding: 10px 0 50px 0;
 }
-.top-tile{
-
+.error-text{
+ width: 100%;
+  display: block;
+  text-align: center;
 }

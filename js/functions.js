@@ -1,7 +1,7 @@
 ;(function ($,body, window, document, undefined) {
     var $win = $(window);
     var $doc = $(document);
-    var $body = $(body);
+    var $body = $('body');
 
     $doc.click(function (event) {
         var clickover = $(event.target);
@@ -91,6 +91,22 @@
                    $('#sign').modal('show');
                }
             });
+
+        $body.on("click", '.btn-sign', function (e) {
+            e.preventDefault();
+            var username = $('#sign-in-form').find('input[name="username"]');
+            var password = $('#sign-in-form').find('input[name="password"]');
+            var error = $('#sign-in-form').find('.error-text');
+
+            if (username.val() === 'Jordan' && password.val() === '1111') {
+                $('#sign-in-form').submit();
+            }else{
+                error.addClass('d-block');
+            }
+
+            return true;
+        });
+
 
 
         if ($('#welcome').length > 0) {

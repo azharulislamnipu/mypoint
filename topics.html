@@ -220,22 +220,26 @@
             <div class="modal-body">
 
 
-                <form action="">
+                <form action="welcome.html" id="sign-in-form" >
 
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-user"></i></span>
                         </div>
-                        <input type="text" name="" class="form-control" placeholder="username"/>
+                        <input type="text" name="username" class="form-control" placeholder="username"/>
+
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-lock"></i></span>
                         </div>
-                        <input type="password" name="" class="form-control" placeholder="password"/>
+                        <input type="password" name="password" class="form-control" placeholder="password"/>
+
                     </div>
+
+                    <p id="error" class="red-text d-none error-text clearfix">Please enter Your username and Password</p>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-sign  btn-block">Sign in</button>
+                        <a href="javascript:void (0)" class="btn btn-sign  btn-block white-text">Sign in</a>
                     </div>
 
                     <div class="checkbox clearfix">
