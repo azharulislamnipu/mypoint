@@ -88,7 +88,7 @@ body.modal-open { overflow: hidden; padding: 0 !important; }
 
 .header-top #menu-action.active span { display: inline; width: auto; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
-.sidebar { position: fixed; z-index: 10; left: 0; top: 50px; height: 100%; width: 60px; background: #000F26; border-right: 0; text-align: center; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.sidebar { position: fixed; z-index: 10; left: 0; top: 0; height: 100%; width: 60px; background: #000F26; border-right: 0; text-align: center; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 .bottom-nav { position: fixed; left: 0; bottom: 0; width: 60px; }
 
@@ -128,6 +128,8 @@ body.modal-open { overflow: hidden; padding: 0 !important; }
 .swing { -webkit-transform-origin: top center; -ms-transform-origin: top center; transform-origin: top center; -webkit-animation-name: swing; animation-name: swing; }
 
 .wrapper.bg-pink { width: 100%; height: 100%; }
+
+.pl-75px { padding-left: 75px !important; }
 
 /* Slider */
 .slick-slider { position: relative; display: block; box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }

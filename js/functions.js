@@ -11,6 +11,7 @@
         }
     });
 
+
     $doc.ready(function () {
          var slider =  $(".slider");
         slider.slick({
@@ -106,6 +107,8 @@
 
             return true;
         });
+
+
 
 
 

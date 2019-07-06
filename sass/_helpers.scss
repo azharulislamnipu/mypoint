@@ -268,7 +268,7 @@ padding: 0 !important;
   position: fixed;
   z-index: 10;
   left: 0;
-  top: 50px;
+  top: 0;
   height: 100%;
   width: 60px;
 
@@ -429,3 +429,6 @@ padding: 0 !important;
   height: 100%;
 }
 
+.pl-75px{
+  padding-left: 75px!important;
+}
