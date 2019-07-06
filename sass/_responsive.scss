@@ -104,12 +104,22 @@
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
-
+  .slider-area .slide{
+    overflow-y: scroll;
+  }
+  .slide-4{
+    padding-top: 100px;
+  }
 }
 
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape){
-
+  .slider-area .slide{
+    overflow-y: scroll;
+  }
+  .slide-4{
+    padding-top: 100px;
+  }
 
 }
 @media only screen
@@ -118,7 +128,12 @@ and (max-device-width : 736px)
 and (orientation : landscape)
 and (-webkit-min-device-pixel-ratio : 3)
 {
-
+  .slider-area .slide{
+    overflow-y: scroll;
+  }
+  .slide-4{
+    padding-top: 100px;
+  }
 }
 
 @media only screen
@@ -127,11 +142,21 @@ and (max-device-width : 740px)
 and (orientation : landscape)
 and (-webkit-min-device-pixel-ratio : 3)
 {
-
+  .slider-area .slide{
+    overflow-y: scroll;
+  }
+  .slide-4{
+    padding-top: 100px;
+  }
 
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
-
+  .slider-area .slide{
+    overflow-y: scroll;
+  }
+  .slide-4{
+    padding-top: 100px;
+  }
   .woocommerce ul.products.columns-3 li.product:nth-child(2n), .woocommerce-page ul.products.columns-3 li.product:nth-child(2n){
    margin-right: 0;
   }

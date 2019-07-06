@@ -57,7 +57,7 @@
                 </ul>
                 <form class="form-inline my-2 my-lg-0 ml-sm-2">
 
-                    <p>Hello , <a href="sign-in.html" class="  my-2 my-sm-0">Sign in</a></p>
+                    <p>Hello , <a href="javascript:void(0)" class=" sing-modal-btn my-2 my-sm-0">Sign in</a></p>
 
                 </form>
             </div>
@@ -186,6 +186,65 @@
     </footer>
     <!-- /.footer  end -->
 </div><!-- /.wrapper -->
+<!-- Modal -->
+<div class="modal fade sign-modal" id="sign" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered " role="document">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <h4 class="modal-title text-center" id="exampleModalLongTitle">Sign In</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"> X</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+
+                <form action="">
+
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                        </div>
+                        <input type="text" name="" class="form-control" placeholder="username"/>
+                    </div>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                        </div>
+                        <input type="password" name="" class="form-control" placeholder="password"/>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-sign  btn-block">Sign in</button>
+                    </div>
+
+                    <div class="checkbox clearfix">
+                        <div class="float-left">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                        <div class="float-right">
+                            <a href="">Forgot Password?</a>
+                        </div>
+                    </div>
+
+                    <div class="or-divider text-center "><p class="m-0">or</p></div>
+
+                    <div class="social-buttons clearfix text-center">
+                        <p>login with your social media account</p>
+                        <a href="#" class="btn btn-fb btn-primary"><i class="fa fa-facebook"></i> Facebook</a>
+                        <a href="#" class="btn btn-tw btn-secondary"><i class="fa fa-twitter"></i> Twitter</a>
+                        <a href="#" class="btn btn-tw btn-danger"><i class="fa fa-google-plus"></i> Google</a>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer text-center ">
+                <p class="m-auto">Don't have an account? <a href="">Sign up Here</a></p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"

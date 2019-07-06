@@ -118,6 +118,13 @@ textarea {
   background: rgb(255,1,91);
   background: linear-gradient(90deg, rgba(255,1,91,1) 0%, rgba(255,79,141,1) 41%, rgba(254,102,155,1) 100%);
 }
+.custom-container{
+  max-width: 850px;
+  margin: 0 auto;
+}
+.pt-100{
+  padding-top: 100px;
+}
 body.modal-open {
   overflow: hidden;
   padding: 0 !important;

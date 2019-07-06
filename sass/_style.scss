@@ -94,7 +94,7 @@ h6 {
 }
 
 .navbar {
-  padding: 0;
+  padding: 0px 40px;
   background-color: transparent;
 }
 
@@ -187,7 +187,7 @@ a.navbar-brand{
  font-family: $roboto;
   font-size: 24px;
   &:hover{
-   color: inherit;
+   color: $red;
   }
 }
 .navbar-expand-lg .navbar-nav .nav-link{
@@ -385,9 +385,8 @@ header.bg-white {
 > slider-area start
 ========================================================================== */
 
-
 .slider-area {
-  height: 100vh;
+  //height: 100vh;
   width: 100%;
   flex-wrap: wrap;
   z-index: 100;
@@ -1000,6 +999,26 @@ ul.work-process>li{
 
 
     }
+  }
+
+  li.active {
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(76, 76, 76, 0.58);
+    }
+    &:hover .overlay{
+        opacity: 1;
+    }
+
   }
 }
 

@@ -86,10 +86,13 @@
         });
 
 
+           $( ".sing-modal-btn" ).click(function() {
+               if ($('#sign').length > 0) {
+                   $('#sign').modal('show');
+               }
+            });
 
-        if ($('#sign').length > 0) {
-            $('#sign').modal('show');
-        }
+
         if ($('#welcome').length > 0) {
             $('#welcome').modal('show');
 
